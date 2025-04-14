@@ -4,6 +4,7 @@ class Solution {
         int ans = 0;
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){
+                if(Math.abs(arr[i]-arr[j])>a)continue;
                 for(int k=j+1;k<n;k++){
                     int x = Math.abs(arr[i]-arr[j]);
                     int y = Math.abs(arr[j]-arr[k]);
