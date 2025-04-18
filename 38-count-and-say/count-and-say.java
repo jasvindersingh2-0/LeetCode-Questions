@@ -22,7 +22,7 @@ class Solution {
             sec.append(c);
             // System.out.println(sec);
             s = new String(sec);
-            sec = new StringBuilder();
+            sec.setLength(0);
             n--;
         }
         return s;
