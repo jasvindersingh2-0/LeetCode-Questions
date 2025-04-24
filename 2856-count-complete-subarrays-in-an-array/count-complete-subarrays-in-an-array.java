@@ -6,7 +6,7 @@ class Solution {
             st.add(i);
         }
         int total = st.size();
-        st.clear();
+        // st.clear();
         HashMap<Integer,Integer>mp = new HashMap<>();
         int ptr1 = 0;
         int ptr2 = 0;
