@@ -19,7 +19,6 @@ class Solution {
                 if(mp.get(nums[ptr1]) == 0)mp.remove(nums[ptr1]);
                 ptr1++;
             }
-            // System.out.println(ans);
             ptr2++;
         }
         return ans;
