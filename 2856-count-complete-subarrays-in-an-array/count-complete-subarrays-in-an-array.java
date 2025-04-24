@@ -13,7 +13,7 @@ class Solution {
         int ans = 0;
         while(ptr2<n){
             mp.put(nums[ptr2],mp.getOrDefault(nums[ptr2],0)+1);
-            while(ptr1<=ptr2 && mp.size()==total){
+            while(mp.size()==total){
                 ans += n - ptr2;
                 mp.put(nums[ptr1],mp.get(nums[ptr1])-1);
                 if(mp.get(nums[ptr1]) == 0)mp.remove(nums[ptr1]);
