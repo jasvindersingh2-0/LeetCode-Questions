@@ -1,7 +1,6 @@
 class Solution {
     public long countSubarrays(int[] nums, int k) {
         int n = nums.length;
-        long ans = 0;
         int max = 0;
         for(int i : nums){
             max = Math.max(i,max);
@@ -9,6 +8,7 @@ class Solution {
         int ptr1 = 0;
         int ptr2 = 0;
         int count = 0;
+        long ans = 0;
         while(ptr2<n){
             if(nums[ptr2]==max)count++;
             while(count>=k){
