@@ -21,6 +21,7 @@ class Solution {
                     pq.offer(new int[]{r,c,cost});
                 }
             }
+            if(dis[m-1][n-1]!= Integer.MAX_VALUE)return dis[m-1][n-1]+1;
         }
         return dis[m-1][n-1]+1;
     }
