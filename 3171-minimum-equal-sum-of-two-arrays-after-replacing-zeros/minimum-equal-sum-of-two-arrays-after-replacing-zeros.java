@@ -1,4 +1,5 @@
 class Solution {
+    // Tip ->It's actually really simple. Iterate over both arrays and get their sums and number of zeros. Every time you see a zero, add 1 to your sum count because that is the minimum possible value they could be. Next you will have num1's minimum possible sum and num2's minimum possible sum. We never want to make the larger of those two sums any greater. How can we determine whether or not the smaller sum can catch up?
     public long minSum(int[] nums1, int[] nums2) {
         long sum1 = 0;
         long sum2 = 0;
