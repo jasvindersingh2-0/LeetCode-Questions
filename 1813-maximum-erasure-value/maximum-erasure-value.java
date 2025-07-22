@@ -7,7 +7,7 @@ class Solution {
         int res = 0;
         HashSet<Integer>st = new HashSet();
         while(ptr2<n){
-            while(ptr1<=ptr2 && st.contains(nums[ptr2])){
+            while(st.contains(nums[ptr2])){
                 st.remove(nums[ptr1]);
                 sum -=nums[ptr1];
                 ptr1++;
