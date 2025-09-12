@@ -9,7 +9,6 @@ class Solution {
         }
         StringBuilder ans = new StringBuilder();
         Collections.sort(arr);
-        // System.out.println()
         int i = 0;
         for(char c : s.toCharArray()){
             if(c=='A' || c =='E' ||c=='I' || c == 'O' || c == 'U' ||
