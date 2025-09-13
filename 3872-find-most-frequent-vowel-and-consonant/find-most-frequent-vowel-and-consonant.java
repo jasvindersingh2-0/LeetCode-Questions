@@ -5,12 +5,11 @@ class Solution {
         int[]arr = new int[26];
         for(char c : s.toCharArray()){
             if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
-                arr[c-'a']++;
-                if(arr[c-'a']>maxVov)maxVov = arr[c-'a'];
+                maxVov = Math.max(maxVov,++arr[c-'a']);
+               
             }
             else{
-                arr[c-'a']++;
-                if(arr[c-'a']>maxCon)maxCon = arr[c-'a'];
+                maxCon = Math.max(maxCon,++arr[c-'a']);
             }
         }
         return maxVov + maxCon;
