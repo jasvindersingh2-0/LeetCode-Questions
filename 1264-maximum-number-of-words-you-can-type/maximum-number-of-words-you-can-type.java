@@ -11,6 +11,7 @@ class Solution {
             for(char c : s.toCharArray()){
                 if(st.contains(c)){
                     flag = false;
+                    break;
                 }
             }
             if(flag)ans++;
