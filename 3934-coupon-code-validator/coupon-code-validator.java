@@ -1,4 +1,5 @@
 class Solution {
+    // My Solution
     public List<String> validateCoupons(String[] code, String[] businessLine, boolean[] isActive) {
         int n = code.length;
         for(int i=0;i<n;i++){
@@ -31,7 +32,9 @@ class Solution {
                 groups.add(temp);
             }
         }
+        
         Collections.sort(groups,((a,b)->a.get(0).equals(b.get(0))?a.get(1).compareTo(b.get(1)):a.get(0).compareTo(b.get(0))));
+
         for(ArrayList<String>i : groups){
             ans.add(i.get(1));
         }
