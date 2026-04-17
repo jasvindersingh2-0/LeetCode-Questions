@@ -3,8 +3,11 @@ class Solution {
         int n = nums.length;
         int ans = Integer.MAX_VALUE;
         Map<Integer,Integer>mp = new HashMap();
+
+
         for(int i=0;i<n;i++){
             int curr = nums[i];
+            // check if reverse of cuur no appears previously or not
             if(mp.containsKey(curr)){
                 ans = Math.min(ans,i-mp.get(curr));
             }
@@ -14,6 +17,7 @@ class Solution {
         }
         return ans == Integer.MAX_VALUE?-1:ans;
     }
+    // reversing the number
     public int reverse(int num){
         int ans = 0;
         while(num%10 == 0){
