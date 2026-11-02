@@ -5,4 +5,3 @@ Select ep.name,bn.bonus
     on ep.empId = bn.empId
     where bonus<1000
     Or bn.bonus is null
-    group by ep.empId
